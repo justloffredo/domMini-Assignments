@@ -19,39 +19,37 @@ button1.addEventListener("click", onClick);
 button2.addEventListener("click", onClick2);
 
 
-/* Create an HTML page with a large element on the page that says
-"Don't hover over me" inside of it. When you hover over the element, send an
-alert to the user that says, "Hey, I told you not to hover over me!"*/
-/* Retreive your elements from the HTML doc*/
-// var hover  = document.getElementById("donthovertext");
-// console.dir(hover);
-//
-// function onmouseover(event) {
-// 	alert("Hey! I Told You Not to Hover Over ME!!");
-// }
-//
-// hover.addEventListener("mouseover", onmouseover);
+// /* Create an HTML page with a large element on the page that says
+// "Don't hover over me" inside of it. When you hover over the element, send an
+// alert to the user that says, "Hey, I told you not to hover over me!"*/
+// /* Retreive your elements from the HTML doc*/
+ var hover  = document.getElementById("donthovertext");
+ console.dir(hover);
 
+ function onmouseover(event) {
+ 	alert("Hey! I Told You Not to Hover Over ME!!");
+ }
 
+ hover.addEventListener("mouseover", onmouseover);
 
-/* Create an HTML page with javascript that listens for a keypress.
-When the user presses that key, the text of the H1 should show the value of the
-key they have pressed. Example: If the user presses "J", the text inside the H1
-should be "J". */
+ /* Create an HTML page with javascript that listens for a keypress.
+ When the user presses that key, the text of the H1 should show the value of the
+ key they have pressed. Example: If the user presses "J", the text inside the H1
+ should be "J". */
 
-// var header = document.getElementById("keypress");
-// console.log(event);
-// function keyPressChange(event) {
-// 	header.innerText = event.key;
-// }
-// window.addEventListener("keypress", keyPressChange);
+ var header = document.getElementById("keypress");
+ console.log(event);
+ function keyPressChange(event) {
+ 	header.innerText = event.key;
+}
+ window.addEventListener("keypress", keyPressChange);
 
-/* Create an HTML page with a form. The form should include inputs for a
-username, email, and password as well as a submit button.
-In a Javascript file, write code that does the following things:
-checks that the password is 12345678
-checks that the username contains at least one number
-if anything is wrong, send an alert message saying "incorrect"*/
+// /* Create an HTML page with a form. The form should include inputs for a
+// username, email, and password as well as a submit button.
+// In a Javascript file, write code that does the following things:
+// checks that the password is 12345678
+// checks that the username contains at least one number
+// if anything is wrong, send an alert message saying "incorrect"*/
 
 var username = document.getElementById("username");
 var email = document.getElementById("email");
